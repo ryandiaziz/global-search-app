@@ -1,4 +1,3 @@
-// import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 
@@ -10,7 +9,6 @@ import { searchCountry, setinitsuggestion } from "../../redux/countrySlice"
 const HomePage = () => {
     const dispatch = useDispatch()
     const [search, setsearch] = useState("")
-    // const navigate = useNavigate()
 
     useEffect(() => {
         if (search) {

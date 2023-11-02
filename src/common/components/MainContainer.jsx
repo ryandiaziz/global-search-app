@@ -1,6 +1,6 @@
 const MainContainer = ({ children }) => {
     return (
-        <main className="h-screen max-w-[1440px] mx-auto">
+        <main className="border-2 border-red-500 h-screen max-w-[1440px] mx-auto">
             {children}
         </main>
     )

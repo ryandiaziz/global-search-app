@@ -1,5 +1,5 @@
-import SearchIcon from '../../../common/assets/search-icon.png'
-import SearchIconColor from '../../../common/assets/search-icon-color.png'
+import SearchIcon from '../../../common/assets/img/search-icon.png'
+import SearchIconColor from '../../../common/assets/img/search-icon-color.png'
 
 const SearchField = ({ onChange }) => {
     return (
