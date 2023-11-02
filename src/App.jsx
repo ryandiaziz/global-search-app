@@ -1,10 +1,12 @@
+import MainContainer from './components/MainContainer'
+import MainContent from './components/MainContent'
 
-function App() {
+const App = () => {
 
   return (
-    <div className="font-bold text-center">
-      TEST TAILWIND
-    </div>
+    <MainContainer>
+      <MainContent />
+    </MainContainer>
   )
 }
 
