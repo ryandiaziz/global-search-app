@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from "react-redux"
 
 import Globe from "../../common/assets/svg/globe.svg"
 import Button from "./components/Button"
-// import Heading from "./components/Heading"
+import Heading from "./components/Heading"
 import Card from "./components/Card"
 import HighlightText from "./components/HighlightText"
 import InfoLayout from "./components/InfoLayout"
-import CountryTag from "./components/CountryTag"
-import { detailCountry, setinitcountry, getCurrencies } from "../../redux/countrySlice"
+import Loader from "../../common/components/Loader"
+import { detailCountry, setinitcountry } from "../../redux/countrySlice"
 
 const DetailPage = () => {
     const location = useLocation()
@@ -19,7 +19,6 @@ const DetailPage = () => {
     const {
         countryData,
         isLoading,
-        altSpellings,
         latlong,
         currencies,
         callingCodes } = useSelector((state) => state.country)
@@ -38,25 +37,10 @@ const DetailPage = () => {
 
     return (
         isLoading
-            ? <p>Loading</p>
+            ? <Loader />
             : <section className="px-20 py-10">
                 <Button />
-                <button onClick={() => dispatch(getCurrencies())}>get</button>
-                {/* <Heading />
-                 */}
-                <section className="flex gap-3 items-baseline mt-10">
-                    <h1 className="text-5xl font-bold text-black">{countryData.name}</h1>
-                    <img src={countryData.flagImage} alt={countryData.flagALT} className="w-[46px]" />
-                </section>
-                <div className="mt-1 flex gap-2">
-                    {
-                        altSpellings.map((item, i) => (
-                            <CountryTag key={i}>
-                                {item}
-                            </CountryTag>
-                        ))
-                    }
-                </div>
+                <Heading />
                 <div className="mt-5 flex gap-6 flex-wrap">
                     <Card >
                         <img src={Globe} alt="Globe" className='absolute w-[204px] right-0 top-4' />

@@ -7,7 +7,7 @@ const InfoLayout = ({ title, content, datas, desc }) => {
             <h3 className="font-medium text-lg">{title}</h3>
             <HighlightText text={content} />
             <div className="text-sm font-medium">
-                <span className="relative peer underline text-[#8362F2] cursor-pointer">{datas.length} country</span> with this {desc}
+                <span className="relative peer underline text-[#8362F2] cursor-pointer">{datas.length > 1 ? `${datas.length} countries` : `${datas.length} country`}</span> with this {desc}
                 <Tooltip datas={datas} />
             </div>
         </div>
