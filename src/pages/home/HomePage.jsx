@@ -28,7 +28,7 @@ const HomePage = () => {
 
     return (
         <>
-            <section className="h-1/2 flex gap-3 flex-col items-center justify-end">
+            <section className="max-sm:px-2 w-full h-1/2 flex gap-3 flex-col items-center justify-end">
                 <Title />
                 <SearchField onChange={(e) => setsearch(e.target.value)} />
             </section>

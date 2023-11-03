@@ -38,19 +38,19 @@ const DetailPage = () => {
     return (
         isLoading
             ? <Loader />
-            : <section className="px-20 py-10">
+            : <section className="px-2 sm:px-10 md:px-20 py-10">
                 <Button />
                 <Heading />
-                <div className="mt-5 flex gap-6 flex-wrap">
+                <div className=" mt-5 flex gap-6 flex-wrap flex-col xl:flex-row items-center">
                     <Card >
-                        <img src={Globe} alt="Globe" className='absolute w-[204px] right-0 top-4' />
-                        <h3 className='text-lg font-medium'>LatLong</h3>
+                        <img src={Globe} alt="Globe" className='absolute w-[140px] md:w-[204px] right-0 top-4' />
+                        <h3 className='text-base md:text-lg font-medium'>LatLong</h3>
                         <HighlightText text={`${latlong[0]}.0, ${latlong[1]}.0`} />
                     </Card>
                     <Card>
-                        <h3 className="text-lg font-normal">Capital: <span className="font-medium">{countryData.capital}</span></h3>
-                        <h3 className="text-lg font-normal">Region: <span className="font-medium">{countryData.region}</span></h3>
-                        <h3 className="text-lg font-normal">Subregion: <span className="font-medium">{countryData.subregion}</span></h3>
+                        <h3 className="text-base md:text-lg font-normal">Capital: <span className="font-medium">{countryData.capital}</span></h3>
+                        <h3 className="text-base md:text-lg font-normal">Region: <span className="font-medium">{countryData.region}</span></h3>
+                        <h3 className="text-base md:text-lg font-normal">Subregion: <span className="font-medium">{countryData.subregion}</span></h3>
                     </Card>
                     <InfoLayout
                         title={"Calling code"}

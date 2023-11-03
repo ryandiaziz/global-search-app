@@ -9,7 +9,7 @@ const ResultContainer = () => {
 
     return (
         suggestion.length > 0 || isNotFound
-            ? <section className="w-[700px] rounded-[5px] py-3 shadow-lg">
+            ? <section className="max-md:mx-2 max-md:max-w-[400px] w-full md:w-[600px] lg:w-[700px] rounded-[5px] py-3 shadow-lg">
                 {
                     isNotFound
                         ? <ResultItem name={"Data not found"} isNotFound={true} />
