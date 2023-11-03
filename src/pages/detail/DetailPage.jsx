@@ -41,7 +41,7 @@ const DetailPage = () => {
             : <section className="px-2 sm:px-10 md:px-20 py-10">
                 <Button />
                 <Heading />
-                <div className=" mt-5 flex gap-6 flex-wrap flex-col xl:flex-row items-center">
+                <div className="mt-5 flex gap-6 flex-wrap flex-col xl:flex-row items-center">
                     <Card >
                         <img src={Globe} alt="Globe" className='absolute w-[140px] md:w-[204px] right-0 top-4' />
                         <h3 className='text-base md:text-lg font-medium'>LatLong</h3>
