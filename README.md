@@ -2,9 +2,10 @@
 
 ## Demo
 
-Insert gif or link to demo
+link to demo :
 
 https://global-search-app.vercel.app/
+
 
 Instal dependensi proyek dengan menjalankan perintah:
 ```npm install```
